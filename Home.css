@@ -1,0 +1,116 @@
+:root{
+    --primary-color:#a855f7;
+    --primary-color-dark:#9333ea;
+    --secondary-color: #ca8a04;
+    --text-dark:#1f2937;
+    --text-light:#6b7280;
+    --extra-light:#faf5ff;
+    --max-width:1200px
+ }
+
+ body{
+   font-family: 'Poppins', sans-serif;
+   background-image: url('Asset/Home.jpg');
+   background-size: cover;
+   background-attachment: fixed; 
+   background-repeat: no-repeat;
+   height: 100vh;
+}
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ a{
+    text-decoration: none;
+ }
+ nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 99;
+    /* max-width: 1200px; */
+    margin: auto;
+    padding: 1.5rem 1rem;
+ }
+ nav a:hover{
+    color: var(--primary-color-dark);
+ }
+
+ ul{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    list-style: none;
+    transition: left 0.3s;
+    float: right;
+ }
+
+ ul li a{
+   padding: 15px;
+    border:2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-dark);
+    transition: 0.3s;
+ }
+
+ ul li a:hover{
+    border-top-color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+    color: var(--secondary-color);
+ }
+ .sub-menu{
+   display: none;
+   position: absolute;
+   background-color: #fff;
+   border: 1px solid #ccc;
+ }
+ nav li:hover .sub-menu {
+   display: inline-block;
+   margin-top: 15px;
+   margin-left: -15px;
+   padding: 15px;
+   line-height-step: 6rem;
+}
+nav li:hover .sub-menu li{
+   width: 150px;
+   padding: 10px;
+   border-bottom: 1px dotted green;
+   background: transparent;
+   border-radius: 0;
+   text-align: left;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background-size: cover;
+    color: #fff;
+    margin-top: 10%;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff; 
+    text-align: center;
+    padding: 50px 30px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+   margin: 0;
+}

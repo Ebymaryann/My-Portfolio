@@ -1,0 +1,145 @@
+:root{
+    --primary-color:#a855f7;
+    --primary-color-dark:#9333ea;
+    --secondary-color: #ca8a04;
+    --text-dark:#1f2937;
+    --text-light:#6b7280;
+    --extra-light:#faf5ff;
+    --max-width:1200px
+ }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ a{
+    text-decoration: none;
+ }
+ nav{
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 99;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1.5rem 1rem;
+ }
+ nav a:hover{
+    color: var(--primary-color-dark);
+ }
+
+ ul{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    list-style: none;
+    transition: left 0.3s;
+    float: right;
+ }
+
+ ul li a{
+    padding: 0.5rem 1rem;
+    border:2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: blue;
+    transition: 0.3s;
+ }
+
+ ul li a:hover{
+    border-top-color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+    color: var(--secondary-color);
+ }
+.heading{
+    text-align: center;
+    padding: 20px;
+    margin: 2%;
+}
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20%;
+    margin-left: 20%;
+    justify-content: space-around;
+   
+  }
+  .social-media i{
+    border: 2px solid white; 
+    border-radius: 50%; 
+    padding: 5px; 
+    margin: 5px;
+  }
+  .link i{
+    border: 2px solid white; 
+    border-radius: 50%; 
+    padding: 10px; 
+    
+
+  }
+  .link{
+    margin-top: 3%;
+  }
+   
+  body{
+    font-family: 'Poppins', sans-serif;
+    background: url('Asset/contactbg.jpg');
+    background-size: cover;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    height: 100vh; 
+ }
+ .form-contact input,
+.form-contact textarea {
+  padding: 10px;
+  width: 70%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+button{
+    padding: 25px;
+    margin-left: 25%;
+    margin-top: 2%;
+    background-color: cadetblue;
+}
+
+ .form-contact{
+    margin-left: 10%;
+    background-color: gray;
+    width: 30%;
+    justify-content: center; 
+    align-items: center;
+ }
+ .contact-body{
+    display: flex;
+ }
+
+ @media (max-width: 767px) {
+    .contact-body {
+      display: flex;
+    }
+    .social-media  {
+      display: flex;
+      flex-direction:column; 
+      margin-left: 5%;
+    }
+    .form-contact{
+        width: 26%;
+        margin-left: 15%;
+        width: 50%;
+    }
+    .form-contact input,
+    .form-contact textarea {
+    padding: 15px;
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 5%;
+    }
+    button{
+        padding: 5%;
+    }
+
+  }
+ 

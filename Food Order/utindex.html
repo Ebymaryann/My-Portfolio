@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="utistyle.css">
+    <title>My menu</title>
+</head>
+<body>
+        <div class="container">
+            <div class="menu-text">
+                <h1 class="menu">FOOD MENU</h1>
+            </div>
+            <div class="list">
+                <div class="food-text">
+                    <h3 class="food-name">Dishes</h3>
+                    <ul id="food">
+                        <li>Noodles</li>
+                        <li>beans</li>
+                        <li>egg</li>
+                        <li>Rice</li>
+                    </ul>
+                </div>
+                <div class="price-text">
+                    <h3 class="price-name">Price</h3>
+                    <ul id="price">
+                        <li>$10</li>
+                        <li>$5</li>
+                        <li>$8</li>
+                        <li>$90</li>
+                    </ul>
+                </div>
+                </div>
+        
+            <div class="inputFood" >
+                <!-- <label for="addmenu"></label> -->
+                <input type="text" id="addmenu" name="addmenu" placeholder="Add to Menu">
+            </div>
+            <!-- name="addmenu" -->
+
+            <div class="inputPrice">
+                <label for="addprice"></label>
+                <input type="text" id="addprice" name="addprice" placeholder="Add price">
+               
+            </div>  
+            
+    
+            <div class="button-text">
+                <button onclick="AddTask()">Click me</button>
+                <span><a href="order.html">MAKE AN ORDER</a></span>
+            </div>
+            <p id="order"></p>
+        </div>
+    
+    <script src="utijava.js"></script>
+</body>
+</html>
